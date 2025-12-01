@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Variables globales */
+:root{
+    --primary: #57B98D;
+    --secondary: #76D7A8;
+    --accent1: #52CA76;
+    --accent2: #65E594;
+    --background: #F2F1EC;
+    --text-dark: #0F0F0F;
+}
+
+
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background);
+    color: var(--text-dark);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Botones globales */
+.btn {
+  display: block;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+  text-align: center;
+	padding: .5em 1.5em;
+	cursor: pointer;
+	font-weight: 500;
+	border-radius: 2rem;
+}
+
+.btn__light {
+  width: fit-content;
+  margin:0 auto;
+	background: var(--primary);
+	border: .2rem solid var(--secondary);
+	color: white;
+}
+
+.btn__light:hover {
+  background: var(--accent1);
+	border: .2rem solid var(--primary);
+	color: var(--text-dark);
+  transition: all 0.8s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000; /* o el color que uses */
+}
+
