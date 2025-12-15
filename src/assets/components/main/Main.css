@@ -1,6 +1,4 @@
-
 .principal{
-    /* border: 1px solid blue; */
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -8,19 +6,19 @@
     margin-bottom: auto;
 }
 
-
 .principal__title{
     font-size: 2rem;
-	font-weight: 600;
+    font-weight: 600;
     margin-bottom: 0;
+    color: #ffffff; /* texto blanco */
 }
 
 .principal__description{
     font-size: 1.1rem;
+    color: #ffffff; /* texto blanco */
 }
 
-
-@media(width>=768px){
+@media (min-width: 768px){
     .principal{
         padding: 2rem 0;
     }

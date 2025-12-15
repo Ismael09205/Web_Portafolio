@@ -1,24 +1,21 @@
 import { Main } from '../main/Main';
 import './Header.css';
-
+import { Link } from "react-router";
 const Header = () => {
-    return (
+  return (
+    <header className="header">
+      <nav className="navbar__container">
+        <p className="navbar__logo">Grupo de Desarrolladores #4</p>
+        <ul className="navbar__menu">
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#project">Proyectos</a></li>
+          <li><a href="#container">Contacto</a></li>
+          <li><Link to="/login">Iniciar Sesion</Link></li>
+        </ul>
+      </nav>
+      <Main />
+    </header>
+  );
+};
 
-        <header>
-            <nav class="navbar__container">
-                <p class="navbar__logo">Medifast</p>
-                <ul class="navbar__menu">
-                    <li><a href="#navbar">Inicio</a></li>
-                    <li><a href="#bout">Sobre mí</a></li>
-                    <li><a href="#portfolio">Proyectos</a></li>
-                    <li><a href="#expert">Experticia</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-            <Main/>
-        </header>
-
-    )
-}
-
-export default Header
+export default Header;
